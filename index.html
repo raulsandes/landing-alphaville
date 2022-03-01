@@ -337,7 +337,15 @@
         <h4 class="subtitle text-center mb-4">
         </h4>
         <form>
-          <div class="flex-md-grow-1 pr-md-3 pb-md-0 pb-3">
+          <div class="flex w-100">
+            <label for="email" class="sr-only">Password</label>
+            <input
+              type="email"
+              class="form-control w-100"
+              id="email_input"
+              placeholder="seu nome"
+            />
+            <br>
             <label for="email" class="sr-only">Password</label>
             <input
               type="email"
@@ -345,17 +353,22 @@
               id="email_input"
               placeholder="seu email"
             />
+            <br>
+            <label for="email" class="sr-only">Password</label>
+            <input
+              type="email"
+              class="form-control w-100"
+              id="email_input"
+              placeholder="seu telefone"
+            />
           </div>
-          <div class="flex-grow-1 flex-md-grow-0">
-            <button
-              type="submit"
-              class="btn btn-light button mb-3 d-md-inline d-block w-100"
-            >
-              cadastre-se
-            </button>
+          <div class="button" align="center">
+            <button type="submit" class="btn btn-primary" align="center">Enviar</button>
           </div>
-          
         </form>
+        <br>
+        <br>
+        
       </div>
       <div class="logo py-4">
         <div class="row">
@@ -384,6 +397,19 @@
   </footer>
   <!--//FOOTER-->
 
+
+  <div class="container">
+    <form action="mailto:raulherbert7@gmail.com" method="post" enctype="text/plain">
+      <h3>Fique por dentro das novidades</h3>
+      <input type="text" id="name" placeholder="Seu nome" required>
+      <input type="text" id="email" placeholder="Seu email" required>
+      <input type="text" id="phone" placeholder="Seu telefone" required>
+      <textarea id="message" rows="4" placeholder="Como posso ajudar?"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
